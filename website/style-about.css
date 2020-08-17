@@ -76,7 +76,7 @@ body{
 	background-size: 1600px;
 	min-height:300px;
 	margin-bottom:20px;
-	text-align:right;
+    text-align:right;
 }
 
 #showcase h1{
@@ -106,14 +106,6 @@ body{
 }
 
 
-#sidebar{
-	float:right;
-	width:30%;
-	background:#333;
-	padding:0 20px;
-	box-sizing:border-box;
-}
-
 #main-footer{
 	background:#333;
 	color:#fff;
@@ -121,8 +113,8 @@ body{
 	text-align:center;
 	margin-top:40px;
 	width:100%;
-	position: absolute;
-	bottom:0;
+    bottom:0;
+    position: relative;
 }
 
 @media(max-width:600px){
