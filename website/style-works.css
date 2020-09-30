@@ -76,15 +76,23 @@ body{
 .grids > div{
 	background:#ffffff;
 	padding:0em;
-	box-shadow: 0px 3px 6px #00000029;
+	box-shadow: 0px 2px 4px #00000029;
 	opacity: 1;
 }
 
 #main a{
 	text-decoration:none;
 	color:dimgray;
-	box-shadow: 0px 3px 6px #00000029;
+	box-shadow: 0px 2px 4px #00000029;
 }
+
+#main a:hover{
+	text-decoration:none;
+	color:dimgray;
+	box-shadow: 0px 6px 12px #00000029;
+}
+
+
 
 #main .grids{
 	display:grid;
@@ -100,6 +108,7 @@ body{
 	padding:5px;
 	margin:0 20px 10px 20px;
 }
+
 
 #main .time{
 	color:#A6B5C1;
