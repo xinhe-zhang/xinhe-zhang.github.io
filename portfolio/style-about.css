@@ -1,0 +1,119 @@
+input{border:none;outline:none;margin:none;}
+
+body{
+	background:#fff;
+	color:dimgray;
+	font-family:Segoe UI,sans-serif;
+	font-size:14px;
+	line-height:1.8em;
+	margin:0; 
+}
+
+.container{
+	width:90%;
+	margin:auto;
+	overflow:hidden;
+}
+
+.header{
+	width:100%;
+	padding:20px 0;
+	background-color:#57BED2;
+	color:white;
+	font-size:18px;
+	margin: 0;
+	/*box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);*/
+	/*position:fixed;
+	top:0px;
+	left:0px;*/
+}
+
+.header .myname{
+	margin-left:15px;
+}
+
+/*NAVBAR*/
+
+.navbar{
+	background:transparent;
+	color:#B7B6B6;
+	padding:3px 0;
+	margin:40px auto;
+	text-align: center;
+}
+
+.navbar .current{
+	color:#57BED2;
+	font-weight: 500;
+}
+
+
+.navbar a{
+	color:#B7B6B6;
+	text-decoration:none;
+	font-size:14px;
+	margin:2px 5px;
+	padding:8px 18px;
+	border:transparent 1px solid;
+
+}
+
+.navbar :hover{
+	color:#57BED2;
+	text-decoration:none;
+	margin:2px 5px;
+	padding:8px 18px;
+}
+
+
+
+/*MAIN*/
+
+#main{
+	padding:30px;
+	margin-bottom: 300px;
+}
+
+.left{
+	float: left;
+	width: 65%;
+}
+
+.right{
+	padding-top:50px;
+	float:right;
+	width:30%;
+}
+
+h3{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+	background:transparent;
+	color:rgb(82, 82, 82);
+	padding:0px;
+	text-align:center;
+	margin:0px;
+	position: relative;
+    bottom:0;
+	width:100%;
+	font-size:12px;
+}
+
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}

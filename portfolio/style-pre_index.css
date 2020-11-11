@@ -1,0 +1,166 @@
+input{border:none;outline:none;margin:none;}
+input:focus{outline:none;}
+a{
+    text-decoration:none;
+    margin:none;
+    padding:none;
+    color:#828282
+}
+
+body{
+	background:#F7F7F7;
+	color:dimgray;
+	font-family:Segoe UI, sans-serif;
+	font-size:14px;
+	line-height:1.8em;
+	margin:0; 
+}
+
+
+
+.container{
+	width:90%;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.header{
+	background:transparent;
+	width:100%;
+	padding:20px 0;
+	font-size:18px;
+	text-align: center;
+}
+
+/*NAVBAR*/
+
+.navbar{
+	background:transparent;
+	color:#B7B6B6;
+	padding:3px 0;
+	margin:200px auto 0px auto;
+	text-align: center;
+}
+
+
+.navbar a{
+	color:#B7B6B6;
+	text-decoration:none;
+	font-size:14px;
+	margin:2px 5px;
+	padding:8px 18px;
+	border:transparent 1px solid;
+
+}
+
+.navbar .current{
+	color:#57BED2;
+	font-weight: 500;
+}
+
+.navbar :hover{
+	color:#57BED2;
+	text-decoration:none;
+	margin:2px 5px;
+	padding:8px 18px;
+}
+
+
+/*SHOWCASE*/
+
+#showcase{
+	background-image:url('./images/showcase-BW.jpg' ) ;
+	background-position:bottom 0 center;
+	background-size: 1600px;
+	height:720px;
+	margin-bottom:0;
+	text-align:center;
+}
+
+#showcase h2{
+	color:#828282;
+	font-weight:400;
+	line-height:1.6em;
+	padding-top:80px;
+}	
+
+.start{
+    margin-top: 430px;
+    color:white;
+}
+
+
+.start-triangle{
+    display:inline;
+}
+
+.start img{
+    position: absolute;
+    left:800px;
+    height:100px;
+    width:15px;
+    opacity: 0.5;
+}
+
+.start img:hover{
+    position: absolute;
+    left:800px;
+    width:730px;
+    height:100px;
+    opacity:0.8;
+    transition:all 2000ms;
+}
+
+
+.text{
+	text-align: center;
+	font-size:18px;
+}
+
+
+/*MAIN*/
+
+#main{
+	width:80%;
+	padding:0 100px;
+	box-sizing:border-box;
+}
+
+
+#arrow {
+	fill:dimgray;
+	fill-rule: evenodd;
+}
+
+#arrow :hover{
+	fill:#57BED2;
+	fill-rule: evenodd;
+}
+
+/*FOOTER*/
+
+#main-footer{
+	background-color:rgba(138, 138, 138, 0.5);
+	font-size:14px;
+	color:#ffffff;
+	padding:0px;
+	text-align:center;
+    margin:0px;
+    position: absolute;
+    bottom:0;
+	width:100%;
+	height:49px;
+	font-size:12px;
+}
+
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}
