@@ -80,7 +80,7 @@ body{
 }
 
 .right{
-	padding-top:50px;
+	padding-top:100px;
 	float:right;
 	width:30%;
 }
@@ -90,7 +90,27 @@ h3{
 	margin-bottom: 0;
 }
 
+.button{
+	margin-top: 15px;
+	float:left;
+	padding:5px 20px;
+	border:solid rgb(156, 156, 156) 1px;
+	border-radius: 5px;
+}
 
+.button:hover{
+	margin-top: 15px;
+	float:left;
+	padding:5px 20px;
+	border:solid rgb(156, 156, 156) 1px;
+	border-radius: 5px;
+	background-color:#EFEFEF ;
+}
+
+#main a{
+	text-decoration: none;
+	color:dimgray;
+}
 
 /*FOOTER*/
 
