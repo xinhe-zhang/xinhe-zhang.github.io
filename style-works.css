@@ -168,23 +168,32 @@ body{
 footer{
 	background:transparent;
 	color:rgb(82, 82, 82);
-	padding:0px;
+	padding:90px 0 0 0;
 	text-align:center;
 	margin:0px;
-	position: absolute;
-    bottom:0;
+	position: relative;;
 	width:100%;
 	font-size:12px;
 }
 
-@media(max-width:600px){
-	#main{
-		width:100%;
-		float:none;
+@media(max-width:1020px){
+	#main .grids{
+		display:grid;
+		grid-template-columns:repeat(2,1fr);
+		grid-auto-rows:minmax(410px,auto);
+		justify-items:stretch;/*左右*/
+		align-items:stretch;/*上下*/
+		grid-gap:45px;
 	}
+}
 
-	#sidebar{
-		width:100%;
-		float:none;
+@media(max-width:600px){
+	#main .grids{
+		display:grid;
+		grid-template-columns:repeat(1,1fr);
+		grid-auto-rows:minmax(410px,auto);
+		justify-items:stretch;/*左右*/
+		align-items:stretch;/*上下*/
+		grid-gap:45px;
 	}
 }
