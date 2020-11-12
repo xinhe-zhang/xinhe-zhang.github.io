@@ -102,15 +102,7 @@ body{
 }
 
 
-#arrow {
-	fill:dimgray;
-	fill-rule: evenodd;
-}
 
-#arrow :hover{
-	fill:#57BED2;
-	fill-rule: evenodd;
-}
 
 /*FOOTER*/
 
