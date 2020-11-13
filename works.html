@@ -12,7 +12,7 @@
 	<title>Hsin He Chang 張昕荷</title>
 	<!--網頁標題前面的小icon-->
 	<link rel="shortcut icon" href="images/icon.ico"/>
-	<link rel="icon" href="images/icon.ico"/> <!-- same as <link rel="bookmark" href="images/icon.ico"/> -->
+	<link rel="icon" href="images/birdy.ico"/> <!-- same as <link rel="bookmark" href="images/icon.ico"/> -->
 
 <!--與css檔的連結 -->
 	<link rel="stylesheet" type="text/css" href="style-works.css">
@@ -20,15 +20,20 @@
 
 <body>
 	<div class="container">
-		<div class="navbar">
-			<a href='index.html'>HOME</a>
-			<a class="current" href='works.html'>WORKS</a>
-			<a href='about.html'>ABOUT</a>
-			<a href='contact.html'>CONTACT</a>
-		</div>
+		<ul class="navbar">
+			<li class="main"><a class="current"  href='index.html'>HOME</a></li>
+			<li class="main works"><a href='works.html'>WORKS</a>
+				<ul class="second">
+					<li><a href='works.html'>PRODUCT</a></li>
+					<li><a href="#">MOTION</a></li>
+				</ul>
+			</li>
+			<li class="main"><a href='about.html'>ABOUT</a></li>
+			<li class="main"><a href='contact.html'>CONTACT</a></li>
+		</ul>	
 	</div>	
 	<div class="container">	
-		<section id="main">
+		<section id="windows">
 			<div class="grids">
 
 				<div class="content">
