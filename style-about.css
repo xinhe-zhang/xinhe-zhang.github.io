@@ -33,6 +33,20 @@ body{
 	margin-left:15px;
 }
 
+/*SCROLLBAR*/
+
+::-webkit-scrollbar{
+	width: 13px;
+	height: 13px;
+	background-color:transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: #B7B6B6;
+	border-radius: 10px;
+  }
+
 /*NAVBAR*/
 
 .navbar {
@@ -136,19 +150,14 @@ h3{
 }
 
 .button{
-	margin-top: 15px;
+	margin-top: 10px;
 	float:left;
-	padding:5px 20px;
+	padding:5px 16px;
 	border:solid rgb(156, 156, 156) 1px;
 	border-radius: 5px;
 }
 
 .button:hover{
-	margin-top: 15px;
-	float:left;
-	padding:5px 20px;
-	border:solid rgb(156, 156, 156) 1px;
-	border-radius: 5px;
 	background-color:#EFEFEF ;
 }
 

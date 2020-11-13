@@ -9,6 +9,7 @@ body{
 	margin:0; 
 }
 
+
 .container{
 	width:90%;
 	margin:auto;
@@ -34,6 +35,20 @@ body{
 .grids a{
 	text-decoration: none;
 }
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar{
+	width: 13px;
+	height: 13px;
+	background-color:transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: #B7B6B6;
+	border-radius: 10px;
+  }
 
 /*NAVBAR*/
 
@@ -107,16 +122,16 @@ body{
 	display: block;
 }
 
-
-
-
 /*MAIN*/
 
 #windows{
 	font-size: 20px;
 	padding:30px;
+	/*border:solid 1px black;*/
+	margin:none;
+	overflow-x:auto;
+	transform:rotateX(180deg); 
 }
-
 
 #windows .grids{
 	display:grid;
@@ -125,8 +140,8 @@ body{
 	justify-items:stretch;/*左右*/
 	align-items:stretch;/*上下*/
 	grid-gap:45px;
+	transform:rotateX(180deg); 
 }
-
 
 .grids > div{
 	background:#ffffff;

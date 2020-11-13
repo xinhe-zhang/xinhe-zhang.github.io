@@ -15,6 +15,10 @@ body{
 	overflow:hidden;
 }
 
+.nav{
+	text-align: center;
+}
+
 .header{
 	width:100%;
 	padding:20px 0;
@@ -32,14 +36,23 @@ body{
 	margin-left:15px;
 }
 
+::-webkit-scrollbar{
+	width: 13px;
+	background-color:transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: #B7B6B6;
+	border-radius: 10px;
+  }
+
 /*NAVBAR*/
 
-.navbar{
-	background:transparent;
-	color:#B7B6B6;
-	padding:3px 0;
-	margin:40px auto;
-	text-align: center;
+.navbar {
+	display: inline-block;
+	padding:0;
+	margin:40px auto 40px auto;
 }
 
 .navbar .current{
@@ -47,21 +60,63 @@ body{
 	font-weight: 500;
 }
 
-
 .navbar a{
 	color:#B7B6B6;
 	text-decoration:none;
 	font-size:14px;
-	margin:2px 5px;
+	margin:none;
 	padding:8px 18px;
-	border:transparent 1px solid;
-
 }
 
-.navbar :hover{
+.navbar a:hover{
 	color:#57BED2;
 	text-decoration:none;
+	margin:none;
+	padding:8px 18px;
+}
 
+
+/*第一層*/
+
+.navbar ul{
+	list-style:none;
+	margin:0;
+	padding: 0;
+}
+
+.main{
+	display: block;
+	background:transparent;
+	float:left;
+	min-width: 100px;
+}
+
+/*第二層*/
+
+.main .second{
+	font-size: 14px;
+	position:absolute;
+	background-color:rgba(87, 190, 210, 0.1);
+	padding:none;
+	margin:none;
+	text-align: center;
+	z-index:50;
+	display: none;	
+}
+
+
+.main ul li{
+	position: relative;
+	padding:8px 0;
+	margin:none;
+	text-align: center;
+}
+
+
+/*hover在works上出現second*/
+.main:hover >.second,
+.second:hover{
+	display: block;
 }
 
 .fas {
@@ -81,17 +136,34 @@ body{
 
 /*MAIN*/
 
+#main{
+	padding:50px 0 30px 0;
+	width: 70%;
+	margin:10px auto;
+}
 
-.image{
-	width:90%;
+.image img{
+	max-width:100%;
+	height: auto;
 	margin:0px auto;
 	text-align: center;
 }
 
+/*讓iframe responsive*/
 
-#main{
-	padding:50px 300px 30px 300px;
-	margin:0px auto;
+.vedio-wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	margin:25px auto;
+}
+
+.vedio-wrapper iframe{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }
 
 #link{
@@ -99,41 +171,50 @@ body{
 	margin:0px auto;
 }
 
-
 .title{
 	font-size: 50px;
 	margin-bottom:25px;
+	margin-top:25px;
 	line-height: 1.2em;
+	padding:0 15px;
 }
 
 .subtitle{
+	padding:0 15px;
 	font-size: 20px;
 	margin-bottom:20px;
 }
 
+.text{
+	padding:0 15px;
+	margin-bottom:25px;
+}
+
 
 .button{
-	color: #57BED2;
-	text-decoration: none;
-	padding:20px;
+	margin: 10px auto;
+	padding:5px 16px;
+	border:solid rgb(156, 156, 156) 1px;
 	border-radius: 5px;
-	background-color: white;
-	border-style:solid;
-	border-color:#B7B6B6;
+	max-width: 200px;
+	min-width: 50px;
+	text-align: center;
 }
 
 .button:hover{
-	color: black;
-	text-decoration: none;
-	padding:20px;
-	border-radius: 5px;
-	background-color:#EFEFEF;
-	border-style:solid;
-	border-color: black;
+	background-color:#EFEFEF ;
 }
 
+#link a{
+	padding: none;
+	margin: none;
+	text-decoration: none;
+	color:dimgray;
+}
 
-
+#link{
+	padding:25px 25px;
+}
 
 /*FOOTER*/
 
@@ -150,13 +231,24 @@ footer{
 }
 
 @media(max-width:600px){
-	#main{
+
+	.container{
 		width:100%;
-		float:none;
+		margin:auto;
+		overflow:hidden;
+	}
+	#main{
+		padding:50px 0 30px 0;
+		width: 80%;
+		margin:0px auto;
 	}
 
-	#sidebar{
+	.image{
 		width:100%;
-		float:none;
+		height: auto;
+		margin:0px auto;
+		padding: 0;
+		text-align: center;
 	}
+
 }

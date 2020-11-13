@@ -33,6 +33,20 @@ body{
 	margin-left:15px;
 }
 
+/*SCROLLBAR*/
+
+::-webkit-scrollbar{
+	width: 13px;
+	height: 13px;
+	background-color:transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: #B7B6B6;
+	border-radius: 10px;
+  }
+
 /*NAVBAR*/
 
 .navbar {
