@@ -13,6 +13,7 @@ body{
 	width:90%;
 	margin:auto;
 	overflow:hidden;
+	text-align: center;
 }
 
 .header{
@@ -34,12 +35,10 @@ body{
 
 /*NAVBAR*/
 
-.navbar{
-	background:transparent;
-	color:#B7B6B6;
-	padding:3px 0;
-	margin:40px auto;
-	text-align: center;
+.navbar {
+	display: inline-block;
+	padding:0;
+	margin:40px auto 40px auto;
 }
 
 .navbar .current{
@@ -47,29 +46,70 @@ body{
 	font-weight: 500;
 }
 
-
 .navbar a{
 	color:#B7B6B6;
 	text-decoration:none;
 	font-size:14px;
-	margin:2px 5px;
+	margin:none;
 	padding:8px 18px;
-	border:transparent 1px solid;
-
 }
 
-.navbar :hover{
+.navbar a:hover{
 	color:#57BED2;
 	text-decoration:none;
-	margin:2px 5px;
+	margin:none;
 	padding:8px 18px;
 }
 
+
+/*第一層*/
+
+.navbar ul{
+	list-style:none;
+	margin:0;
+	padding: 0;
+}
+
+.main{
+	display: block;
+	background:transparent;
+	float:left;
+	min-width: 100px;
+}
+
+/*第二層*/
+
+.main .second{
+	font-size: 14px;
+	position:absolute;
+	background-color:rgba(87, 190, 210, 0.1);
+	padding:none;
+	margin:none;
+	text-align: center;
+	z-index:50;
+	display: none;	
+}
+
+
+.main ul li{
+	position: relative;
+	padding:8px 0;
+	margin:none;
+	text-align: center;
+}
+
+
+/*hover在works上出現second*/
+.main:hover >.second,
+.second:hover{
+	display: block;
+}
 
 
 /*MAIN*/
 
 #main{
+	text-align: left;
 	padding:30px;
 }
 

@@ -17,7 +17,6 @@ body{
 }
 
 
-
 .container{
 	width:90%;
 	margin:0 auto;
@@ -169,6 +168,8 @@ body{
 		line-height:1.6em;
 		padding-top:30px;
 	}	
-
+	.navbar {
+		margin:200px auto 50px auto;
+	}
 
 }
