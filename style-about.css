@@ -150,11 +150,12 @@ h3{
 }
 
 .button{
-	margin-top: 10px;
+	margin-top: 20px;
 	float:left;
 	padding:5px 16px;
 	border:solid rgb(156, 156, 156) 1px;
 	border-radius: 5px;
+	text-align: center;
 }
 
 .button:hover{
@@ -172,10 +173,10 @@ footer{
 	background:transparent;
 	color:rgb(82, 82, 82);
 	padding:0px;
+	height:auto;
 	text-align:center;
-	margin:0px;
-	position: relative;
-    bottom:0;
+	margin:30px 0 0 0;
+    bottom:0px;
 	width:100%;
 	font-size:12px;
 }
