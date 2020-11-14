@@ -176,7 +176,7 @@ body{
 }
 
 
-@media(max-width:600px){
+@media(max-width:768px){
 	#showcase h2{
 		color:#828282;
 		font-weight:400;
